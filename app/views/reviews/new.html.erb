@@ -1,0 +1,6 @@
+<h2>Create a new review</h2>
+
+<%= simple_form_for [@restaurant, @review] do |f| %>
+	<%= f.input :content %>
+	<%= f.submit 'Create review', class: 'btn btn-primary' %>
+<% end %>

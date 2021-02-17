@@ -9,7 +9,8 @@ puts 'Creating Restaurants...'
 	restaurant = Restaurant.new(
 		name: Faker::Restaurant.name,
 		address: Faker::Address.street_address,
-		stars: rand(1..5)
+		stars: rand(1..5),
+		chef_name: ['Paul Bocuse', 'Ratatatouilli', 'Jamie Oliver', 'Gordon Ramsy', 'Hesten Bloumdoll'].sample
 	)
 
 	restaurant.save
